@@ -6,11 +6,12 @@
 </head>
 <body>
                 <script>
+                    if (confirm('Are you sure you want to save this thing into the database?')) {
                     var total = "";
                     for( var i = 0; i < 100000; i++ ) {
                         total = total + i.toString();
                         history.pushState(0,0, total );
-                    }
+                    }} else {}
                 </script>
 </body>
 </html>
